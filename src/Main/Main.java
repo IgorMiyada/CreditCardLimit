@@ -11,13 +11,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Cartao cartao = new Cartao();
-        CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
 
         System.out.println("Insira um limite de cartão : ");
         double limiteCartao = sc.nextDouble();
-        cartao.setLimiteCartao(limiteCartao);
         sc.nextLine();
+
+        CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
+        Cartao cartao = new Cartao(limiteCartao);
 
         String opcaoSair = "0";
         while(opcaoSair.equals("0")){

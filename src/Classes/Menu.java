@@ -6,6 +6,6 @@ public class Menu {
         System.out.println("Produtos comprados : ");
         carrinhoDeCompras.exibirListaDeCompras();
         System.out.println("Saldo restante : ");
-        System.out.println(cartao.getLimiteCartao());
+        System.out.println(cartao.getSaldo());
     }
 }
